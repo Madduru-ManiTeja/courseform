@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Feedback Survey</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 400px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    table tr td {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td colspan="2" style="text-align: center;"><h1>Course Feedback</h1></td>
+    </tr>
+    <tr>
+      <td><label for="name">Name:</label></td>
+      <td><input type="text" id="name" name="name" required></td>
+    </tr>
+    <tr>
+      <td><label for="email">Email:</label></td>
+      <td><input type="email" id="email" name="email" required></td>
+    </tr>
+    <tr>
+      <td><label for="college">College Name:</label></td>
+      <td><input type="text" id="college" name="college" required></td>
+    </tr>
+    <tr>
+      <td><label for="gender">Gender:</label></td>
+      <td>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="phone">Phone Number:</label></td>
+      <td><input type="tel" id="phone" name="phone" required></td>
+    </tr>
+    <tr>
+      <td><label for="course">Course:</label></td>
+      <td>
+        <input type="checkbox" id="ai" name="course" value="AI">
+        <label for="ai">AI</label><br>
+        <input type="checkbox" id="ml" name="course" value="ML">
+        <label for="ml">ML</label><br>
+        <input type="checkbox" id="deep-learning" name="course" value="Deep Learning">
+        <label for="deep-learning">Deep Learning</label><br>
+        <input type="checkbox" id="web-development" name="course" value="Web Development">
+        <label for="web-development">Web Development</label>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="feedback">Feedback:</label></td>
+      <td><textarea id="feedback" name="feedback" rows="4" cols="30" required></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <button onclick="window.close()">Close</button>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
